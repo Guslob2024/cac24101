@@ -1,0 +1,271 @@
+:root {
+    --rojo: #9f3647;
+    --texto-blanco:#ffffff;
+    --fondo-azul: rgb(29, 24, 24);
+}
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.header{
+    background-color: var(--rojo);
+    padding-top: 2vh;
+    height: 10vh;
+    min-height: 50px;
+    padding-left: 3vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+}
+.header_logo{
+    height: 5vh;
+    width: 40vw;
+    color:var(--texto-blanco);
+    padding-left: 1.6vw;      
+    text-decoration: none;    
+}
+.header_menu{
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 5vw;
+}
+.header_menu a{
+    text-decoration: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color:var(--texto-blanco);
+}
+.header_btn_sesion{
+    background-color:var(--fondo-negro);
+    color:var(--texto-blanco);
+    padding: 5px;
+    border-radius: 5px;
+    /* border: none; */
+    --fondo-negro:#000000; 
+}
+.header_btn_sesion:hover {
+    font-size: 1.1rem;
+    color: rgb(101, 201, 101);
+}
+/*.texto-blanco{
+    color:var(--texto-blanco);
+  }*/
+.main {
+    background-image: linear-gradient( to right top , #0000008a, #0000008a) ,
+                      url("https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/banner-bg.jpg");
+    height: 98vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height:400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main_titulo{
+    padding-top : 20vh;
+    padding-bottom: 5vh;
+    font-size: 3em;
+}
+.main_subtitulo{
+    margin-bottom: 5vh;
+}
+.main_btn_registrarse {
+    /*margin-top: 3vh;  tambien puede ir para separar*/
+    text-decoration: none; 
+    padding: 10px;
+    background-color:var(--rojo);
+    color: var(--texto-blanco); 
+    border-radius: 5px;
+    /* border: none; */
+}
+.busqueda{
+    text-align: center;
+    height: 50vh;
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    padding-top: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column; 
+}
+.busqueda h2 + form {  
+    margin-top: 5vh;    
+}
+h2{
+    text-align: center;
+    margin-bottom: 10vh;
+    font-size: 2.5rem;
+}
+main{
+    background-color: var(--fondo-azul);
+    color: var(--texto-blanco); 
+    height: 450vh;
+}
+.input_search{
+    padding: 2vh 3vh;
+    text-transform: capitalize;
+    border-radius: 25px;
+    width: 50vh;
+    border: none; 
+}/*seguir aca*//**//**//**//**//**//**/
+.button_search{
+    padding: 1.5vh 3vh;
+    border-radius: 25px;
+    border: 2px solid var(--texto-blanco);
+    background-color: var(--rojo);
+    color: var(--texto-blanco);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.button_search:hover {
+    font-size: 1.1rem;
+}
+.linea{ 
+    margin: 0 auto;
+    margin-top: 20vh;                        
+    width: 77vw;
+    border: 0.5px solid var(--rojo)
+}
+.flex-container1{
+    height: 20vh; 
+    display: flex;  
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25vh;
+    margin-left: 11vw ;
+    margin-right: 8vw;
+}
+.flex-container1 div {
+width: 250px;
+}
+div img {
+    border-radius: 4%;
+    /* border: 2px solid red  ; */
+    margin-bottom: 10vh;
+}
+.main_btn_anterior {
+   
+    text-decoration: none;
+    padding: 20px; /*espacio desde el borde hacia adentro*/
+    background-color:var(--rojo);
+    color: var(--texto-blanco);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid white  ;
+}   
+.main_btn_anterior:hover {
+    font-size: 0.9rem;
+}
+.main_btn_siguiente {
+    
+    text-decoration: none;
+    padding: 20px 18px; /*espacio desde el borde hacia adentro*/
+    background-color:var(--rojo);
+    color: var(--texto-blanco);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid white  ;
+}
+.main_btn_siguiente:hover {
+    font-size: 1.1rem;
+}
+
+.alinear{
+    margin-right: 3vw;
+    display: flex;  
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+hr { 
+    margin-left: 11vw;
+    margin-top: 195vh;                  
+    width: 77vw;
+    border: 0.5px solid var(--rojo)
+}
+#mas{
+    margin-top: 1.7vh;
+}
+.flex-container2{
+    height: 20vh;
+    display: flex;  
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25vh;
+    margin-left: 11vw ;
+    margin-right: 11vw;
+}
+.flex-container div {
+width: 250px;
+}
+.footer_menu{
+    background-color: var(--rojo);
+    height: 15vh;
+    /* display: inline-block;  */
+    width: 93.9vw;
+    /* padding-top: 2vh; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 5vw;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+.footer_menu a{
+    text-decoration: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color:var(--texto-blanco);/*agregado por mi*/ 
+}
+.footer_btn_administrador{/*agregado por mi*/
+    background-color:var(--fondo-negro);/*agregado por mi*/
+    color:var(--texto-blanco);/*agregado por mi*/
+    padding: 10px;/*agregado por mi*/
+    border-radius: 5px;/*agregado por mi*/
+    border: none;/*agregado por mi*/
+    --fondo-negro:#000000;
+}
+.footer_btn_administrador:hover {
+    font-size: 1.5rem;
+}
+.elemento_fijo{
+    position: fixed;
+    bottom: 6vh;
+    right: 4vw;
+    color: var(--fondo-negro);
+    font-size: 2rem;
+}
+
+/*.footer_menu a {
+    margin-left: 0;
+}*/
